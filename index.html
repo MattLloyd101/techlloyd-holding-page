@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechLloyd | Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 0;
+      animation: fadeInUp 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      box-shadow: 
+        1000px 200px #fff, 300px 400px #fff, 700px 100px #fff, 
+        400px 600px #fff, 200px 300px #fff, 500px 700px #fff, 
+        800px 500px #fff, 600px 800px #fff;
+      animation: moveStars 50s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-2000px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div>
+    <h1>TechLloyd</h1>
+    <p>We’re building something amazing. Stay tuned 🚀</p>
+  </div>
+</body>
+</html>
