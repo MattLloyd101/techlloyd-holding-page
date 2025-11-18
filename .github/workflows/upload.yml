@@ -4,6 +4,7 @@ on: push
 
 jobs:
   upload-to-s3:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
