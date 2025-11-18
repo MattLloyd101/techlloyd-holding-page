@@ -1,2 +1,2 @@
 # techlloyd-holding-page
-Holding page for techlloyd/com
+Holding page for techlloyd.com
