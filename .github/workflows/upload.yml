@@ -4,6 +4,7 @@ on: push
 
 jobs:
   upload-to-s3:
+    environment: production
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
